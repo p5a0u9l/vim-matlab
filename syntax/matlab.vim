@@ -57,6 +57,7 @@ syn match matlabSemicolon		";"
 syn match matlabComment			"%.*$"	contains=matlabTodo,matlabTab
 syn region matlabBlockComment        start=+%{+    end=+%}+ contains=matlabBlockComment
 
+setlocal commentstring=%\ %s
 
 " trigonometric
 syn keyword matlabFunc 			acos acosd acosh acot acotd acoth acsc acscd acsch asec asecd asech asin asind asinh
